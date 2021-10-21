@@ -81,14 +81,14 @@ public class GameOfLife : ProcessingLite.GP21
                 {
                     while (row <= 1)
                     {
-                        if (i + column < 1)
+                        if (i + column < 0)
                         {
                             column++;
                         }
                         else if (i + column > numberOfColums - 1)
                             break;
 
-                        if (j + row < 1)
+                        if (j + row < 0)
                         {
                             row++;
                         }
@@ -109,7 +109,6 @@ public class GameOfLife : ProcessingLite.GP21
                 if (cells[i, j].alive == true)
                     aliveCheck--;
 
-                Debug.Log(aliveCheck);
                 if (aliveCheck < 2 && cells[i, j].alive == true)
                 {
                     copyCells[i, j].alive = false;
