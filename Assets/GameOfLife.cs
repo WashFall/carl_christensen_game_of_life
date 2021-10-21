@@ -55,6 +55,7 @@ public class GameOfLife : ProcessingLite.GP21
 
         //TODO: update buffer
         Buffer();
+
         //Draw all cells.
         for (int y = 0; y < numberOfRows; ++y)
         {
@@ -68,12 +69,11 @@ public class GameOfLife : ProcessingLite.GP21
 
     void Count()
     {
-        int aliveCheck;
         for (int i = 0; i < numberOfColums; i++)
         {
             for (int j = 0; j < numberOfRows; j++)
             {
-                aliveCheck = 0;
+                int aliveCheck = 0;
                 int column = -1;
                 int row = -1;
 
