@@ -7,7 +7,7 @@ public class GameOfLife : ProcessingLite.GP21
     float cellSize = 0.25f; //Size of our cells
     int numberOfColums;
     int numberOfRows;
-    int spawnChancePercentage = 15;
+    int spawnChancePercentage = 30;
 
     void Start()
     {
